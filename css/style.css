@@ -879,7 +879,7 @@ form button{
 border:none;
 cursor:pointer;
 
-}
+}                                                                                                                                                                                 
 
 /*==============================
 SOCIAL ICONS
@@ -938,4 +938,104 @@ transform:translateY(-8px) rotate(360deg);
 
 .whatsapp-float:hover {
     transform: scale(1.05);
+}
+
+/* =========================
+   CONTACT PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .contact-info {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .contact-form {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .contact-form iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        border: 0;
+        box-sizing: border-box;
+    }
+
+    .google-form-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .google-form-container iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        border: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+
+/* CONTACT PAGE MOBILE FIX */
+
+@media (max-width: 768px) {
+
+    /* Contact cards */
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Google Form */
+    iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+}
+
+
+
+/* Contact Page Responsive */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+
+    .contact-container .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-container iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
 }
